@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:divider="@null"
+
+        android:dividerHeight="3dp"/>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5627293645158234/9978832886"/>
+</RelativeLayout>

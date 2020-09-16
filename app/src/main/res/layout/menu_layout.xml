@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="7dp"
+    android:layout_margin="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Introduction to Python"
+            android:layout_margin="10dp"
+            android:textSize="30dp"
+            android:id="@+id/titleView"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:shadowRadius="10"
+            android:shadowDy="10"
+            android:shadowDx="10"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:id="@+id/descView"
+            android:layout_margin="15dp"
+            tools:text="Keywords, identifier, Literals, Creating a Variable, Variable, Definition, Reading, Numbers, Output using Print()"/>
+        <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:indeterminate="false"
+            app:backgroundColor="#E3F2FD"
+            app:progressColor="#42A5F5"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:progress="40"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/button_1"
+            style="@style/ButtonStyle"
+            android:background="#64B5F6">
+            <TextView
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="START LESSON"
+                android:gravity="center"
+                android:id="@+id/button"
+                android:layout_centerInParent="true"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

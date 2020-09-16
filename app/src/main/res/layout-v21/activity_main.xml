@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@drawable/sample_image"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="4dp"
+        android:id="@+id/card_view4"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="700dp"
+                android:layout_height="0dp"
+                android:transitionName="image"
+                android:layout_marginTop="3dp"
+                android:layout_weight="65"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+
+                app:civ_border_color="@color/colorAccent"
+                app:civ_border_width="3dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:transitionName="username_1"
+                    android:layout_weight="20"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:id="@+id/user"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="10"
+                    android:transitionName="mail_1"
+                    android:layout_height="0dp"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="10dp"
+                    android:id="@+id/mail"/>
+            </LinearLayout>
+            <View
+                android:layout_width="3dp"
+                android:layout_height="1500dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:background="#1976D2" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.4"
+                    android:text=" Your Progress Report"
+                    app:autoSizeTextType="uniform"
+                    android:layout_marginTop="7dp"
+                    android:textStyle="bold|italic"
+                    android:id="@+id/status"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:textSize="20dp"
+                        android:transitionName="learn_status"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:textColor="#00695C"
+                        android:text="Learn"
+                        android:id="@+id/learn_progress_text"
+
+                        />
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/circularProgressBar1"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:transitionName="learn_bar"
+                        android:layout_height="match_parent"
+                        app:cpb_background_progressbar_color="#b6bbd8"
+                        app:cpb_background_progressbar_width="5dp"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false" />
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:text="Program"
+
+                        android:id="@+id/program_progress_text"
+                        android:transitionName="progress_status"
+                        android:textColor="#00695C"
+                        android:textSize="20dp"
+                        android:padding="1dp"
+                        android:gravity="center"/>
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/circularProgressBar2"
+                        android:layout_width="0dp"
+                        android:transitionName="progress_bar"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        app:cpb_background_progressbar_color="#b6bbd8"
+                        app:cpb_background_progressbar_width="5dp"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progressbar_color="#3f51b5"
+                        app:cpb_progressbar_width="10dp"
+                        app:cpb_round_border="false" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+            android:layout_weight="75"
+
+        android:orientation="vertical">
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/view_pager"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:layout_marginTop="2dp"
+                android:paddingEnd="30dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingStart="30dp"
+                android:layout_weight="1.9">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+             card_view:cardElevation="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?android:attr/selectableItemBackground"
+        android:id="@+id/help_card"
+                
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_margin="3dp"
+               android:layout_height="wrap_content"
+               android:src="@drawable/asking"
+               android:layout_gravity="center"
+               android:layout_marginLeft="9dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/help"
+                android:textStyle="bold"
+                android:textColor="#00695C"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Help"
+                android:textSize="30dp"
+                android:fontFamily="serif"/>
+        </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

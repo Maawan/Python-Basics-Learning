@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+   <WebView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="10"
+       android:id="@+id/web"/>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:elevation="20dp"
+        android:background="?attr/selectableItemBackground"
+        app:elevation="20dp"
+        app:borderWidth="2dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button2"
+        android:layout_width="wrap_content"
+        android:elevation="20dp"
+        android:background="?attr/selectableItemBackground"
+        app:elevation="20dp"
+        app:borderWidth="2dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        android:id="@+id/page_card"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="5dp"
+        >
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:background="@color/colorPrimaryDark"
+         android:layout_height="match_parent">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/page_text"
+           android:layout_margin="3dp"
+           android:textColor="#fff"
+           android:textStyle="bold"
+           android:layout_centerInParent="true"
+           android:text="Page 2 of 15"/>
+     </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:id="@+id/loading_anime">
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.FoldingCube"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="#fff" />
+</RelativeLayout>
+</RelativeLayout>

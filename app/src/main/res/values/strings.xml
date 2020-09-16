@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Python Basics Learning</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="title_1">Learn Section</string>
+    <string name="title_learn_1">Python Concepts</string>
+    <string name="title_learn_3">Finding Outputs</string>
+    <string name="title_learn_2">Finding Errors in Program</string>
+    <string name="desc_1">Here , you will Learn all the concepts of Python one by one . Video Tutorials are also available in the pages ahead for your better Understanding</string>
+    <string name="learn_desc_1">Here ,in this Module you will learn all the Concepts of Python from Scratch (Especially for Boards Preparation) </string>
+    <string name="learn_desc_2">Here ,you will learn about the kind of errors you get in Python Program . You will also learn how to find Errors in Python Program</string>
+    <string name="learn_desc_3">Here ,you will learn how to take out the output of a Python Program ( especially for Boards CBSE/ICSE )</string>
+    <string name="desc_2">Here , you will get all the Programs of Python topic by Topic . All the Programs covered are just for CBSE/ICSE Board Preparation Level</string>
+    <string name="title_2">Program Section</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_python_conepts_all">Python_conepts_all</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/first_anime" android:duration="130"/>
+    <item android:drawable="@drawable/second" android:duration="130"/>
+    <item android:drawable="@drawable/third" android:duration="130"/>
+    <item android:drawable="@drawable/fourth" android:duration="130"/>
+    <item android:drawable="@drawable/fifth" android:duration="130"/>
+    <item android:drawable="@drawable/sizth" android:duration="130"/>
+    <item android:drawable="@drawable/seventh" android:duration="130"/>
+    <item android:drawable="@drawable/eight" android:duration="130"/>
+    <item android:drawable="@drawable/nine" android:duration="130"/>
+    <item android:drawable="@drawable/ten" android:duration="130"/>
+    <item android:drawable="@drawable/eleven" android:duration="130"/>
+    <item android:drawable="@drawable/twelve" android:duration="130"/>
+    <item android:drawable="@drawable/thirteen" android:duration="130"/>
+    <item android:drawable="@drawable/fourteen" android:duration="130"/>
+    <item android:drawable="@drawable/fifteen" android:duration="130"/>
+    <item android:drawable="@drawable/sixteen" android:duration="130"/>
+    <item android:drawable="@drawable/seventeen" android:duration="130"/>
+    <item android:drawable="@drawable/eighteen" android:duration="130"/>
+</animation-list>

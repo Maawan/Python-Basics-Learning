@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+        <LinearLayout android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android" >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/logo"
+                android:layout_margin="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hayatsoft_bue"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:text="This is a company made by a student and for the students for the conceptual understanding of Programming Languages."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:text="This is our first app and there are possibilites of error but for you we are learning new thing everyday and making you understand in easy language."
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:text="We understand not everyone gets a Teacher that I got in my time .So, I did't waste my time in reading books rather then doing practicals of it .That's why all the expaination here is not at all bookish language and everyone can understand it easily."
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textStyle="italic"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:text="I, Heartly thanks my Teacher (Mr Damian) for being with me when I was stuck and making me understand each and every topic in easy way."
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+</RelativeLayout>

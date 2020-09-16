@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "535267281927",
+    "firebase_url": "https://pythom-17c93.firebaseio.com",
+    "project_id": "pythom-17c93",
+    "storage_bucket": "pythom-17c93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535267281927:android:92f624282ce2ec24",
+        "android_client_info": {
+          "package_name": "com.hayatsoftwares.www.python"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkktZgKUARmyXljaLS1qSo6iB7l9N5raY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535267281927-lbc4kblu4dn5tt5gmf5uoriajaor44sp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

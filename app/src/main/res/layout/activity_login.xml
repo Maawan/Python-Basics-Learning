@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/color2">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/python"
+        android:id="@+id/image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python Basics Learning"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#004D40"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:id="@+id/heading"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="5dp">
+    <TextView
+        android:textColor="#00695C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered by "
+
+
+        android:textSize="15dp"
+        android:id="@+id/hayat"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00695C"
+            android:text=" Hayatsoftwares ®"
+
+
+            android:textSize="15dp"
+            android:id="@+id/hayat1"/>
+    </LinearLayout>
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="sign"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="30dp"
+        android:id="@+id/progressCard"
+        android:padding="20dp"
+        app:cardElevation="20dp">
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/progress"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
